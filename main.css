@@ -1,0 +1,90 @@
+/* Utility */
+._fz80 { font-size: 5.000em; }
+._fz70 { font-size: 4.375em; }
+._fz64 { font-size: 4.000em; }
+._fz48 { font-size: 3.000em; }
+._fz36 { font-size: 2.250em;}
+._fz34 { font-size: 2.125em; }
+._fz32 { font-size: 2.000em; }
+._fz30 { font-size: 1.875em; }
+._fz28 { font-size: 1.750em; }
+._fz26 { font-size: 1.625em; }
+._fz24 { font-size: 1.500em; }
+._fz22 { font-size: 1.375em; }
+._fz20 { font-size: 1.250em; }
+._fz18 { font-size: 1.125em;}
+._fz16 { font-size: 1em; }
+._fz14 { font-size: 0.875em; }
+._fz12 { font-size: 0.750em; }
+._lh-solid { line-height: 1em; }
+._lh-title { line-height: 1.5em; }
+._lh-copy { line-height: 1.2em; }
+.rounded-12 { border-radius: 12px; }
+.text-black { color: #000; }
+.text-yellow { color: #ffff00; }
+.bg-black { background-color: #000; }
+.bg-yellow,
+.btn-yellow { background-color: #ffff00; }
+.btn-yellow:hover,
+.btn-yellow:focus { background-color: rgba(255, 255, 0, .8); }
+.text-green { color: #088800; }
+.text-grey { color: #757575; }
+.border-white-4 { border: 4px solid #fff;}
+.border-red-4 { border: 4px solid #ff0000;}
+.btn-green { background-color: #46ff00; }
+.btn-green:hover,
+.btn-green:focus { background-color: rgb(70, 255, 0, .8); }
+
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: auto;
+}
+
+.header,
+.content-info {
+    background-color: #18191b;
+}
+.btn-custom-title { font-size: 1.500em; }
+
+/* Timer */
+
+#minute,
+#second {
+    background: #FE3939;
+    border: 3px solid #C72D2D;
+    color: #fff;
+    margin: 0 5px;
+    padding: 10px 10px;
+}
+#minute:after {
+    content: "minutos";
+}
+#second:after {
+    content: "segundos";
+}
+#minute:after,
+#second:after {
+    font-size: 14px;
+    display: block;
+    line-height: 14px;
+    font-weight: normal;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    background-color: #000;
+    border-radius: 40px;
+    height: 40px;
+    width: 40px;
+    background-size: 50% 50%;
+}
+.carousel-control-next { right: -15%; }
+.carousel-control-prev { left: -15%; }
+
+@media (max-width: 768px) {
+    .carousel-control-next { right: 0; }
+    .carousel-control-prev { left: 0; }
+    .tcb-icon { display: none; }
+    .btn-custom-title { font-size: 1em; }
+}
